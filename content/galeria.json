@@ -1,0 +1,18 @@
+{
+  "fotos": [
+    {"imagem": "assets/van-rampa.jpg", "legenda": "Furgão de resgate com rampa aberta e moto embarcada", "larga": true},
+    {"imagem": "assets/harley-santos.jpg", "legenda": "Harley embarcada no furgão na orla de Santos"},
+    {"imagem": "assets/pan-america.jpg", "legenda": "Embarque de moto em rua de Santos"},
+    {"imagem": "assets/quadriciclo-rampa.jpg", "legenda": "Quadriciclo subindo na rampa do furgão"},
+    {"imagem": "assets/quadriciclo-camuflado.jpg", "legenda": "Quadriciclo camuflado no furgão de resgate"},
+    {"imagem": "assets/gold-wing-preta.jpg", "legenda": "Honda Gold Wing sendo embarcada"},
+    {"imagem": "assets/gold-wing-cinza.jpg", "legenda": "Gold Wing cinza embarcando no furgão"},
+    {"imagem": "assets/custom-embarque.jpg", "legenda": "Moto custom pronta para embarque"},
+    {"imagem": "assets/custom-cuidado.jpg", "legenda": "Moto custom cuidada pela equipe"},
+    {"imagem": "assets/harley-resgate.jpg", "legenda": "Harley-Davidson sendo resgatada"},
+    {"imagem": "assets/equipe-joinville.jpg", "legenda": "Equipe e furgão em Joinville"},
+    {"imagem": "assets/estrada-br354.jpg", "legenda": "Equipe na divisa RJ e MG, BR-354"},
+    {"imagem": "assets/uruguai.jpg", "legenda": "Estrada na fronteira do Uruguai: resgate internacional"},
+    {"imagem": "assets/ilustracao-plantao.jpg", "legenda": "Ilustração do furgão Angels com o plantão e QR Code do WhatsApp", "larga": true}
+  ]
+}

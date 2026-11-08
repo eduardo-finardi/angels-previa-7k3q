@@ -1,7 +1,30 @@
 document.getElementById('ano').textContent = new Date().getFullYear();
 
 // Lightbox das galerias
-(function () {
+(async function () {
+  const grid = document.querySelector('[data-gallery]');
+  if (grid) {
+    try {
+      const r = await fetch('content/galeria.json', { cache: 'no-cache' });
+      let fotos = (await r.json()).fotos || [];
+      const limit = parseInt(grid.dataset.limit, 10);
+      if (limit) fotos = fotos.slice(0, limit);
+      grid.textContent = '';
+      fotos.forEach((f, n) => {
+        const a = document.createElement('a');
+        a.href = f.imagem;
+        if (f.larga) a.className = 'big';
+        const im = document.createElement('img');
+        im.src = f.imagem;
+        im.alt = f.legenda || 'Foto de atendimento da Angels Moto Resgate';
+        if (n > 1) im.loading = 'lazy';
+        a.appendChild(im);
+        grid.appendChild(a);
+      });
+    } catch (e) {
+      grid.textContent = 'Não foi possível carregar as fotos agora.';
+    }
+  }
   const lb = document.getElementById('lb');
   const links = [...document.querySelectorAll('.grid a')];
   if (!lb || !links.length) return;
